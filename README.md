@@ -13,9 +13,8 @@ This project explores factors influencing Airbnb pricing in New York City using 
 ---
 
 ## Project Structure
-- `/data`: Contains the dataset used for analysis (if available).
 - `/notebooks`: Jupyter Notebook files for data analysis.
-- `/docs`: Reports and supporting documents.
+- `/report`: Reports for data analysis and statistics results.
 - `/visualizations`: Visualizations generated from the analysis.
 
 ---
