@@ -16,6 +16,7 @@ This project explores factors influencing Airbnb pricing in New York City using 
 - `/notebooks`: Jupyter Notebook files for data analysis.
 - `/report`: Reports for data analysis and statistics results.
 - `/visualizations`: Visualizations generated from the analysis.
+- `/regression`: Contains regression analysis results and related files.
 
 ---
 
