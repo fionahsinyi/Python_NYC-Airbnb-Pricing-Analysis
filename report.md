@@ -1,4 +1,4 @@
-# NYC Airbnb Listings Exploratory Data Analysis
+# NYC Airbnb Pricing Report
 
 ---
 
