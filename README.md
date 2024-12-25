@@ -37,8 +37,8 @@ This project explores factors influencing Airbnb pricing in New York City using 
 
 ## How to Use
 1. Clone this repository: `git clone https://github.com/yourusername/NYC-Airbnb-Pricing-Analysis.git`
-2. Navigate to `/notebooks` to view the Jupyter Notebook file.
-3. Open the PDF report in `/docs` for detailed findings and methodologies.
+2. Navigate to `notebooks` to view the Jupyter Notebook file.
+3. Open the report in `report.md` for detailed findings and methodologies.
 
 ---
 
