@@ -1,5 +1,3 @@
-# Python_NYC-Airbnb-Pricing-Analysis
-
 # NYC Airbnb Pricing Analysis
 
 ## Overview
