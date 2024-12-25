@@ -32,7 +32,7 @@ How do Room Type, Neighborhood, and Other Factors Influence Pricing Trends in th
 - Key Transformations:
   - `reviews_per_month` chosen to avoid autocorrelation with `number_of_reviews`.
   - Dummy variables for `neighbourhood_group` and `room_type`.
-
+<img width="580" alt="截圖 2024-12-25 中午12 51 47" src="https://github.com/user-attachments/assets/f6d13bbd-b493-49ce-a3ce-96033cd642a2" />
 
 ---
 
@@ -49,14 +49,38 @@ How do Room Type, Neighborhood, and Other Factors Influence Pricing Trends in th
 
 ## **4. Exploratory Data Analysis (EDA)**
 ### **Key Insights**
-1. **Room Type**:
-   - Entire homes/apartments (52% of listings) have the highest median prices.
-   - Private rooms (45%) cater to budget travelers; shared rooms (3%) are least common.
-2. **Neighborhood**:
-   - Manhattan and Brooklyn host 85.4% of listings, dominating the premium market.
-   - Queens (11.6%), Bronx, and Staten Island account for the rest.
+1. **Room Type Distribution**:
+   - Entire homes/apartments account for 52% of listings, commanding the highest median prices.
+   - Private rooms make up 45% and are popular among budget travelers.
+   - Shared rooms represent only 3% of listings, serving niche markets.
+
+2. **Neighborhood Distribution**:
+   - Manhattan and Brooklyn dominate with 85.4% of all listings.
+   - Queens contributes 11.6%, while Bronx and Staten Island together account for just 3%.
+   - Listings are concentrated in high-demand areas like Manhattan's Central Park vicinity and Brooklyn's waterfronts.
+![newplot (6)](https://github.com/user-attachments/assets/2111659e-085d-4287-91be-ea70c910e9e7)
+
 3. **Price Distribution**:
-   - Skewed with most listings under $200/night and outliers inflating maximums.
+   - Most listings are priced below $200 per night, but outliers inflate the average.
+   - Entire homes/apartments exhibit the widest price range, from affordable units to luxury properties.
+   - Private and shared rooms have tighter price distributions, catering to budget-conscious travelers.
+<img width="882" alt="截圖 2024-12-25 中午12 53 14" src="https://github.com/user-attachments/assets/95b25067-4ebb-4d03-98db-3f6efca73c65" />
+
+4. **Price by Neighborhood**:
+   - Manhattan leads with the highest median prices due to its premium location and high demand for entire homes/apartments.
+   - Brooklyn offers slightly lower median prices, appealing to mid-range travelers.
+   - The Bronx and Staten Island have the most affordable options, with fewer luxury offerings.
+![newplot (7)](https://github.com/user-attachments/assets/8ce26311-0a9a-4ebd-919e-fd442e34f57f)
+
+5. **Geographical Trends**:
+   - Heatmaps of listings reveal high-density clusters around Central Park in Manhattan and Williamsburg in Brooklyn.
+   - Listings are sparsely distributed in outer boroughs like Staten Island and the Bronx.
+<img width="575" alt="截圖 2024-12-25 中午12 55 28" src="https://github.com/user-attachments/assets/b30ddbf8-00e0-41c0-9779-a21c71551f1a" />
+
+6. **Correlation Analysis**:
+   - Weak correlation between availability and price, indicating limited impact of availability on pricing.
+   - Negative correlation between reviews per month and price, suggesting budget-friendly properties attract more frequent reviews.
+<img width="699" alt="截圖 2024-12-25 中午12 56 05" src="https://github.com/user-attachments/assets/92c75043-86a6-4add-9fdc-2544f8d9f106" />
 
 ---
 
@@ -65,6 +89,7 @@ How do Room Type, Neighborhood, and Other Factors Influence Pricing Trends in th
 - **Model Fit**:
   - R-squared: 29.2% of the variance in price is explained by the predictors.
   - Adjusted R-squared: Adjusted to account for the number of predictors, indicating a moderate model fit.
+<img width="667" alt="截圖 2024-12-25 中午12 56 48" src="https://github.com/user-attachments/assets/11eece18-e1fb-4bc2-b04f-fb3a65fb04e4" />
 
 ### **Key Predictors and Their Impact**
 - **Intercept**:
@@ -141,3 +166,4 @@ The regression model highlights that room type and neighborhood are the most sig
 ## **9. References**
 - Estrada, Grace. New York Airbnb Investment Recommendation. Kaggle.
 - Dataset: [New York City Airbnb Open Data](https://www.kaggle.com/code/graceestrada/new-york-airbnb-investment-recommendation).
+
